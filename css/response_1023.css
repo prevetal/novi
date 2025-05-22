@@ -1,0 +1,484 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 35px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .top
+    {
+        padding: 10px 0;
+    }
+
+
+    header .menu_btn
+    {
+        display: flex;
+    }
+
+
+    header .menu,
+    header .btns
+    {
+        display: none;
+    }
+
+
+    header .search
+    {
+        width: 180px;
+    }
+
+
+    header .contacts .phone
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .page_head .btns a
+    {
+        padding: 9px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        width: 100%;
+    }
+
+
+    .block_head .all_link
+    {
+        width: 100%;
+        margin-top: -6px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+    .text_block > *.big_m
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 24px;
+    }
+
+    .text_block h3
+    {
+        font-size: 20px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3
+    {
+        margin-top: 40px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 3px;
+    }
+
+
+    .text_block .gallery
+    {
+        margin-top: 40px;
+        margin-right: calc(var(--cont_padding) * -1);
+        margin-bottom: 40px;
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .title
+    {
+        font-size: 44px;
+
+        width: 480px;
+    }
+
+
+    .main_slider .images .image
+    {
+        display: none;
+    }
+
+
+    .main_slider .images .image:nth-child(1),
+    .main_slider .images .image:nth-child(2)
+    {
+        display: block;
+    }
+
+
+    .main_slider .images .image img
+    {
+        height: calc(100vh - 108px);
+    }
+
+
+    .top_banner ~ .main_slider .images .image img
+    {
+        height: calc(100vh - 137px);
+    }
+
+
+
+    /*-----------------
+        Silhouettes
+    -----------------*/
+    .silhouettes .row > *
+    {
+        width: calc(25% - 4px);
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .bg
+    {
+        padding: 48px 48px 0;
+    }
+
+
+    .action_block .data,
+    .action_block .data.big_w,
+    .action_block .data.biggest_w
+    {
+        width: 100%;
+        min-height: 0;
+
+        text-align: center;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 36px;
+    }
+
+
+    .action_block .title br
+    {
+        display: none;
+    }
+
+
+    .action_block .btn_wrap
+    {
+        padding-top: 30px;
+    }
+
+
+    .action_block .messengers
+    {
+        justify-content: center;
+
+        padding-top: 30px;
+    }
+
+
+    .action_block .messengers a
+    {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .action_block .messengers .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .action_block .socials
+    {
+        justify-content: center;
+
+        padding-top: 30px;
+    }
+
+
+    .action_block .socials a
+    {
+        width: 138px;
+        padding: 0 20px;
+    }
+
+
+    .action_block .image,
+    .action_block .image.big
+    {
+        position: relative;
+        right: 0;
+
+        height: auto;
+        margin: 40px auto 0;
+        padding: 0;
+    }
+
+
+
+    /*----------
+        Sale
+    ----------*/
+    .sale .row > *
+    {
+        width: calc(25% - 4px);
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(50% - 8px);
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .data
+    {
+        width: 100%;
+
+        gap: 40px;
+    }
+
+
+
+    /*-----------
+        Share
+    -----------*/
+    .share .btn
+    {
+        height: 40px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row > *
+    {
+        width: calc(33.333% - 4px);
+    }
+
+
+    .products .product .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .row
+    {
+        margin-bottom: -30px;
+    }
+
+
+    .contacts_info .row > *
+    {
+        width: calc(50% - 4px);
+        margin-bottom: 30px;
+    }
+
+
+    .contacts_info .map
+    {
+        width: calc(100% - 4px);
+        height: 360px;
+    }
+
+
+    .contacts_info .requisites
+    {
+        width: calc(100% - 4px);
+    }
+
+
+    .contacts_info .files
+    {
+        width: calc(100% - 4px);
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .grid_wrap
+    {
+        overflow-x: auto;
+
+        margin-right: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+        padding: 0 var(--cont_padding);
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .gallery .grid_wrap::-webkit-scrollbar
+    {
+        display: none;
+        visibility: hidden;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .gallery .grid_wrap::-webkit-scrollbar-thumb
+    {
+        display: none;
+        visibility: hidden;
+
+        background-color: transparent;
+    }
+
+
+    .gallery .grid
+    {
+        width: 1200px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .category .name
+    {
+        font-size: 20px;
+
+        bottom: 0;
+    }
+
+
+    .catalog .grid .category:not(:first-child) .name
+    {
+        font-size: 14px;
+
+        padding: 12px 16px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+
+
+    .product_info .data
+    {
+        width: 100%;
+    }
+
+
+    .product_info .product_name
+    {
+        font-size: 28px;
+    }
+
+
+
+    /*---------------------
+        Mob. fixed btns
+    ---------------------*/
+    .mob_fixed_btns
+    {
+        display: flex;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col
+    {
+        width: 280px;
+    }
+
+
+    footer .phone > a
+    {
+        font-size: 16px;
+    }
+
+
+    footer .links
+    {
+        margin-left: 60px;
+    }
+}

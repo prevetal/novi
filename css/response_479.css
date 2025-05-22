@@ -1,0 +1,239 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .location
+    {
+        font-size: 8px;
+
+        letter-spacing: .48px;
+    }
+
+
+    header .rating
+    {
+        font-size: 10px;
+        line-height: 7px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .page_head .cont
+    {
+        gap: 24px;
+    }
+
+
+    .page_head .btns a
+    {
+        padding: 7px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .title
+    {
+        font-size: 34px;
+    }
+
+
+    .main_slider .title br
+    {
+        display: none;
+    }
+
+
+    .top_banner ~ .main_slider .images .image img
+    {
+        height: calc(100vh - 144px);
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item
+    {
+        font-size: 10px;
+
+        padding: 20px 12px;
+    }
+
+
+    .advantages .item .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+
+
+    /*-----------------
+        Silhouettes
+    -----------------*/
+    .silhouettes .item
+    {
+        font-size: 10px;
+
+        padding: 12px 8px;
+
+        gap: 8px;
+    }
+
+
+    .silhouettes .item .icon
+    {
+        width: 31px;
+        height: 38px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .bg
+    {
+        padding: 48px 16px 0;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 24px;
+    }
+
+
+    .action_block .desc br
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .product .stickers
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        height: 193px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .category .name
+    {
+        font-size: 12px;
+    }
+
+
+    .catalog .grid .category:not(:first-child) .name
+    {
+        font-size: 12px;
+
+        padding: 12px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .top_banner ~ .product_info .images .image
+    {
+        height: calc(100vh - 144px);
+    }
+
+
+
+    .product_info .buy .btns
+    {
+        gap: 8px;
+    }
+
+
+    .product_info .buy .buy_btn,
+    .product_info .buy .favorite_btn
+    {
+        width: 100%;
+    }
+}

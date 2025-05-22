@@ -1,0 +1,307 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 20px;
+        --font_size_title: 40px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 16px 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu_btn
+    {
+        margin-right: 20px;
+    }
+
+
+    header .logo img
+    {
+        width: 109px;
+        height: 20px;
+    }
+
+
+    header .catalog_link .link
+    {
+        padding: 0 20px;
+    }
+
+
+    header .search
+    {
+        width: 200px;
+    }
+
+
+    header .contacts .phone
+    {
+        font-size: 16px;
+    }
+
+
+    header .contacts .messengers
+    {
+        gap: 4px;
+    }
+
+
+    header .btns
+    {
+        gap: 16px;
+    }
+
+
+    header .btns .btn
+    {
+        font-size: 11px;
+
+        gap: 6px;
+    }
+
+
+    header .btns .icon
+    {
+        width: 18px;
+        height: 14px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        gap: 24px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .swiper-button-prev
+    {
+        left: var(--cont_padding);
+
+        margin-left: 0;
+    }
+
+
+    .main_slider .swiper-button-next
+    {
+        right: var(--cont_padding);
+
+        margin-right: 0;
+    }
+
+
+    .main_slider .data
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 48px;
+
+        width: 520px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        width: calc(100% + var(--cont_padding) * 2);
+        margin-right: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .advantages .item
+    {
+        padding: 30px 0;
+
+        gap: 20px;
+    }
+
+
+
+    /*-----------------
+        Silhouettes
+    -----------------*/
+    .silhouettes .item
+    {
+        padding: 20px 16px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .bg
+    {
+        padding: 60px;
+    }
+
+
+    .action_block .data.biggest_w
+    {
+        width: 408px;
+    }
+
+
+    .action_block .messengers a
+    {
+        width: 56px;
+        height: 56px;
+    }
+
+
+    .action_block .socials a
+    {
+        width: 128px;
+        padding: 0 16px;
+    }
+
+
+    .action_block .image
+    {
+        right: 60px;
+
+        width: 424px;
+    }
+
+
+    .action_block .image.big
+    {
+        right: 40px;
+
+        width: 452px;
+    }
+
+
+
+    /*-----------
+        Share
+    -----------*/
+    .share .btn
+    {
+        height: 44px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .product .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item .val
+    {
+        font-size: 22px;
+    }
+
+
+    .contacts_info .map
+    {
+        width: calc(100% - 352px);
+        height: 400px;
+    }
+
+
+    .contacts_info .files
+    {
+        width: 348px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .category .name
+    {
+        font-size: 26px;
+    }
+
+
+    .catalog .grid .category:not(:first-child) .name
+    {
+        font-size: 18px;
+
+        padding: 8px 16px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        width: calc(100% - 464px);
+    }
+
+
+
+    .product_info .data
+    {
+        width: 460px;
+        padding: 30px;
+    }
+
+
+    .product_info .product_name
+    {
+        font-size: 32px;
+    }
+
+
+    .product_info .messengers
+    {
+        width: calc(100% + 60px);
+        margin-right: -30px;
+        margin-bottom: -30px;
+        margin-left: -30px;
+        padding: 20px 30px;
+    }
+}
