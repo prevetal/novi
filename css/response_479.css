@@ -96,7 +96,8 @@
     }
 
 
-    .top_banner ~ .main_slider .images .image img
+    .top_banner ~ .main_slider .images .image img,
+    .top_banner ~ .main_slider .video video
     {
         height: calc(100vh - 144px);
     }

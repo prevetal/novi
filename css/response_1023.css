@@ -126,9 +126,7 @@
     .text_block .gallery
     {
         margin-top: 40px;
-        margin-right: calc(var(--cont_padding) * -1);
         margin-bottom: 40px;
-        margin-left: calc(var(--cont_padding) * -1);
     }
 
 
@@ -157,13 +155,15 @@
     }
 
 
-    .main_slider .images .image img
+    .main_slider .images .image img,
+    .main_slider .video video
     {
         height: calc(100vh - 108px);
     }
 
 
-    .top_banner ~ .main_slider .images .image img
+    .top_banner ~ .main_slider .images .image img,
+    .top_banner ~ .main_slider .video video
     {
         height: calc(100vh - 137px);
     }
@@ -434,7 +434,6 @@
     .product_info .images
     {
         width: 100%;
-        margin-bottom: 4px;
     }
 
 

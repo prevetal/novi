@@ -4,6 +4,32 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function() {
+	// Top banner slider
+	const topBannerSliders = [],
+		topBanner = document.querySelectorAll('.top_banner .swiper')
+
+	topBanner.forEach((el, i) => {
+		el.classList.add('top_banner_s' + i)
+
+		let options = {
+			loop: true,
+			speed: 30000,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			slidesPerView: 1,
+			spaceBetween: 0,
+			allowTouchMove: false,
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: false
+			},
+		}
+
+		topBannerSliders.push(new Swiper('.top_banner_s' + i, options))
+	})
+
+
 	// Main slider
 	let mainSlider = document.querySelector('.main_slider .swiper')
 
@@ -16,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			slideVisibleClass: 'visible',
 			spaceBetween: 0,
 			slidesPerView: 1,
-			loopAdditionalSlides: 1,
 			pagination: {
 				el: '.swiper-pagination',
 				type: 'bullets',
@@ -164,12 +189,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		let options = {
 			loop: true,
 			loopAdditionalSlides: 3,
-			speed: 500,
+			speed: 6000,
+			centeredSlides: true,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
 			lazy: true,
 			spaceBetween: 4,
+			allowTouchMove: false,
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: false
+			},
 			breakpoints: {
 				0: {
 					slidesPerView: 2
@@ -341,6 +372,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Product info
 	initProductInfoSlider()
+
+
+	// Mob. search
+	$('.mob_fixed_btns .search_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.mob_fixed_search').toggleClass('show')
+	})
 })
 
 
@@ -456,7 +495,13 @@ function initProductInfoSlider() {
 					},
 					lazy: true,
 					spaceBetween: 4,
-					slidesPerView: 1
+					slidesPerView: 1,
+					pagination: {
+						el: '.swiper-pagination',
+						type: 'bullets',
+						clickable: true,
+						bulletActiveClass: 'active'
+					}
 				}
 
 				productInfoSlider.push(new Swiper('.product_info_s' + i, options))

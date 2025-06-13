@@ -209,13 +209,15 @@
     }
 
 
-    .main_slider .images .image img
+    .main_slider .images .image img,
+    .main_slider .video video
     {
         height: calc(100vh - 103px);
     }
 
 
-    .top_banner ~ .main_slider .images .image img
+    .top_banner ~ .main_slider .images .image img,
+    .top_banner ~ .main_slider .video video
     {
         height: calc(100vh - 132px);
     }
@@ -477,7 +479,8 @@
 
 
     .product_info .images .swiper-button-next,
-    .product_info .images .swiper-button-prev
+    .product_info .images .swiper-button-prev,
+    .product_info .images .swiper-pagination
     {
         display: flex;
     }
