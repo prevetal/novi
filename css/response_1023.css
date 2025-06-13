@@ -20,6 +20,33 @@
     }
 
 
+    header .header_catalog .links
+    {
+        font-size: 11px;
+    }
+
+
+    header .header_catalog .links a.sub_link:after
+    {
+        width: 24px;
+        height: 12px;
+
+        border-width: 12px;
+    }
+
+
+    header .header_catalog .links a
+    {
+        padding: 24px 0;
+    }
+
+
+    header .header_catalog .sub_links a
+    {
+        padding: 0;
+    }
+
+
     header .menu_btn
     {
         display: flex;
@@ -479,5 +506,25 @@
     footer .links
     {
         margin-left: 60px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal .modal_title
+    {
+        margin-bottom: 28px;
+    }
+
+
+
+    /*------------------
+        PopUp - City
+    ------------------*/
+    #city_modal .options .btn
+    {
+        height: 44px;
     }
 }

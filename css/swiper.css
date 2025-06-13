@@ -63,6 +63,13 @@
 }
 
 
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    background: #cabeb6;
+}
+
+
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet

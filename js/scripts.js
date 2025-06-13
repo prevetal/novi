@@ -233,6 +233,29 @@ document.addEventListener('DOMContentLoaded', function() {
 		MODAL: 'Вы можете закрыть это модальное окно нажав клавишу ESC'
 	}
 
+	Fancybox.defaults.tpl = {
+		closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="images/sprite.svg#ic_close"></use></svg></button>',
+
+		main: `<div class="fancybox__container" role="dialog" aria-modal="true" aria-label="{{MODAL}}" tabindex="-1">
+			<div class="fancybox__backdrop"></div>
+			<div class="fancybox__carousel"></div>
+			<div class="fancybox__footer"></div>
+		</div>`,
+	}
+
+
+	// Modals
+	$('.modal_btn').click(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: document.getElementById(e.target.getAttribute('data-modal')),
+			type: 'inline'
+		}])
+	})
+
 
 	// Zoom images
 	Fancybox.bind('.fancy_img', {
@@ -379,6 +402,71 @@ document.addEventListener('DOMContentLoaded', function() {
 		e.preventDefault()
 
 		$('.mob_fixed_search').toggleClass('show')
+	})
+
+
+	// Mini popups
+	$('.mini_modal_btn').click(function(e) {
+		e.preventDefault()
+
+		const modalId = $(this).data('modal-id')
+
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$('.mini_modal').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		} else {
+			$('.mini_modal_btn').removeClass('active')
+			$(this).addClass('active')
+
+			$('.mini_modal').removeClass('active')
+			$(modalId).addClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'pointer')
+		}
+	})
+
+	// Close the popup when clicking outside of it
+	$(document).click(e => {
+		if ($(e.target).closest('.modal_cont').length === 0) {
+			$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
+	})
+
+
+	// Header catalog
+	$('.header_catalog .links a.sub_link').click(function(e) {
+		e.preventDefault()
+
+		$('.header_catalog .sub_links').removeClass('show')
+		$(this).next().addClass('show')
+	})
+
+
+	// Menu modal
+	$('#menu_small_modal .menu a.catalog_link, #menu_small_modal .catalog_menu > .back .btn').click(function(e) {
+		e.preventDefault()
+
+		$('#menu_small_modal .catalog_menu').toggleClass('show')
+	})
+
+	$('#menu_small_modal .catalog_menu .items a.sub_link').click(function(e) {
+		e.preventDefault()
+
+		const sub = $(this).data('sub-index')
+
+		$('#menu_small_modal .catalog_menu .sub' + sub).addClass('show')
+	})
+
+	$('#menu_small_modal .catalog_menu .sub .back .btn').click(function(e) {
+		e.preventDefault()
+
+		const sub = $(this).closest('.sub')
+
+		sub.removeClass('show')
 	})
 })
 
